@@ -1,0 +1,428 @@
+body{
+    margin: 0;
+    padding: 0;
+}
+
+header{
+    background: url(../images/background-homepage.png);
+    background-size: cover;
+    background-repeat: no-repeat;
+    height: 100vh;
+    /* width: 100vw; */
+    overflow: hidden;
+}
+
+nav{
+    display: flex;
+    height: 60px;
+    width: 960px;
+    margin: auto;
+    align-items: center;
+}
+
+.brand ul, .menu ul{
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+
+.brand ul li{
+    display: inline-block;
+    padding: 0px 20px 0px 0px;
+    font-family: 'Orbitron', sans-serif;
+    font-size: 22px;
+    font-weight: 900;
+
+}
+.toggle-button{
+    display: none;
+    flex-direction: column;
+    justify-content: space-between;
+    width: 30px;
+    height: 21px;
+}
+.toggle-button .bar{
+    height: 3px;
+    width: 100%;
+    background-color: #ffffff;
+    border-radius: 10px;
+}
+.menu{
+    display: block;
+}
+.menu ul li{
+    display: inline-block;
+    padding: 21px;
+    height: 20px;
+}
+
+.menu ul li a{
+    font-family: 'Poppins', sans-serif;
+    font-size: 16px;
+    font-weight: 600;
+}
+
+.menu ul li a:hover{
+    color: rgba(227, 103, 0, 08);
+    background-color: rgba(red, green, blue, alpha);
+}
+
+.brand ul li a, .menu ul li a{
+    color: #ffffff;
+    text-decoration: none;
+}
+
+#active, #active a{
+    color: #e36700;
+    background-color: #ffffff;
+}
+.break{
+    height: 3px;
+    background-color: white;
+}
+.hero_section{
+    /* height: 60px; */
+    width: 960px;
+    margin: auto;
+    align-items: center;
+    text-align: center;
+}
+.hero_section img{
+    margin-top: 25vh;
+}
+#greeting{
+    font-family: 'Russo One', sans-serif;
+    font-size: 65px;
+    color: #ffffff;
+    margin: 50px 0 0 0;
+}
+#intro{
+    font-family: 'Poppins', sans-serif;
+    font-size: 23px;
+    font-weight: 600;
+    color: #ffffff;
+    margin: 0;
+}
+.container{
+    width: 960px;
+    margin: auto;
+}
+
+.content{
+    margin: 150px 0 0 0;
+}
+#title{
+    font-family: 'Orbitron', sans-serif;
+    font-size: 22px;
+    font-weight: 700;
+    color: #e36700;
+    text-align: center;
+    margin: 0 0 70px 0;
+}
+.about_details{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.about_details img{
+    border-radius: 5px;
+    width:465px;
+}
+
+#introduction{
+    width: 475px;
+    font-family: 'Poppins', sans-serif;
+    font-size: 17px;
+    font-weight: 400;
+    text-align: justify;
+    line-height: 34px;
+    color: #333333;
+    margin: 0;
+}
+.content{
+    text-align: center;
+}
+#divider{
+    margin: 75px 0;
+}
+#title_nested{    
+    font-family: 'Orbitron', sans-serif;
+    font-size: 22px;
+    font-weight: 700;
+    color: #333333;
+    text-align: center;
+    margin: 0px 0 25px 0;
+}
+#paragraph{
+    width: 760px;
+    font-family: 'Poppins', sans-serif;
+    font-size: 17px;
+    font-weight: 400;
+    text-align: center;
+    line-height: 34px;
+    color: #333333;
+    margin: auto;
+}
+#divider_circle{
+    margin: 71px 0;
+}
+.team_list{
+    width: 820px;
+    margin: auto;
+    display: flex;
+    justify-content: space-between;
+}
+#member_detail{
+    font-family: 'Poppins', sans-serif;
+    font-size: 17px;
+    font-weight: 400;
+    line-height: 20px;
+    color: #333333;
+}
+.contact{
+    margin: 50px 0 0 0;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    text-align: left;
+}
+.message_box{
+    width: 470px;
+    height: 380px;
+    background: rgba(187, 187, 187, 0.3);
+    border-radius: 10px;
+    padding: 35px 50px 14px 50px;
+}
+
+.first_row{
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+}
+.first_row input{
+    width: 215px;
+}
+
+
+input, textarea{
+    font-family: 'Poppins', sans-serif;
+    font-size: 16px;
+    font-weight: 400;
+    color: #333333;
+    border-radius: 5px;
+    border: none;
+    padding: 0;
+    margin: 0;
+    resize: none;
+}
+
+input{
+    height: 50px;
+}
+
+#input_width{
+    width: 458px;
+    margin: 25px 0
+}
+input[placeholder], textarea[placeholder]{
+    padding: 0 0 0 12px;
+}
+textarea[placeholder]{
+    padding: 8px 0 0 12px;
+}
+#send_message{
+    width: 200px;
+    font-family: 'Orbitron', sans-serif;
+    font-size: 16px;
+    font-weight: 700;
+    color: #ffffff;
+    text-align: center;
+    margin: 30px 0 0 0;
+    background: #e36700;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.contact_info{
+    width: 330px;
+    text-align: left;
+}
+
+.contact_one, .contact_two, .contact_three, .contact_four{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.contact_one div, .contact_two div, .contact_three div, .contact_four div{
+    width: 230px;
+}
+
+#enable_whitespace{
+    margin: 35px 0;
+}
+
+#contact_title{
+    font-family: 'Poppins', sans-serif;
+    font-size: 16px;
+    font-weight: 400;
+    color: #111111;
+    margin: 5px 0;
+}
+#contact_info{
+    font-family: 'Poppins', sans-serif;
+    font-size: 16px;
+    font-weight: 400;
+    color: #444444;
+    margin: 5px 0;
+}
+
+.social_media a{
+    text-decoration: none;
+    margin: 0 20px;
+}
+
+footer{
+    margin-top: 75px;
+    height: 60px;
+    width: 100%;
+    background: linear-gradient(to right, rgba(227, 103, 0, 0.6), rgba(227, 103, 0,0.4), rgba(227, 103, 0, 0.6) ), url(../images/background-homepage.png) no-repeat;
+    background-size: cover;
+    background-repeat: no-repeat;
+    display: flex;
+    align-items: center;
+}
+footer p{
+    margin: 0;
+    width: 100%;
+    text-align: center;
+    font-family: 'Poppins', sans-serif;
+    font-size: 16px;
+    font-weight: 400;
+    color: #ffffff;
+    overflow: hidden;
+}
+
+@media(max-width:1000px) {
+    nav, .container, .team_list, .hero_section{
+        width: 760px;
+    }
+    #introduction{
+        width: 360px;
+    }
+    .about_details img{
+        width: 380px;
+    }
+    .contact{
+        display: block;
+        justify-content: none;
+    }
+    .message_box, .contact_info{
+        margin:auto;
+        margin-top: 50px;
+    }
+}
+
+@media(max-width:800px){
+    nav, .container, .team_list, .hero_section{
+        width: 640px;
+    }
+
+    #active a:hover{
+        color: rgba(227, 103, 0, 08);
+        background-color: transparent;
+    }
+    .toggle-button{
+        display:flex;
+    }
+    .menu{
+        display:none;
+        width: 100%;
+        background: rgba(138, 110, 86, 0.5);
+        text-align: center;
+        z-index: 1;
+    }
+    nav{
+        flex-direction: column;
+        align-items: flex-start;
+    }
+    .brand{
+        display: flex;
+        height: 60px;
+        width: 640px;
+        align-items: center;
+        justify-content: space-between;
+    }
+    .brand ul li{
+        height: 60px;
+        display: flex;
+        align-items: center;
+    }
+    .menu ul li{
+        display: block;
+    }
+    #active, #active a{
+        color: #ffffff;
+        background-color:transparent;
+    }
+    #paragraph{
+        width: 640px;
+    }
+    .about_details{
+        display: block;
+    }
+    .about_details img{
+        margin-top:50px;
+        width: 100%;
+    }
+    #introduction{
+        width: 100%;
+    }
+    
+}
+@media(max-width:670px){
+    nav, .container, .team_list, .hero_section{
+        width: 540px;
+    }
+    .brand{
+        width: 540px;
+    }
+    #paragraph{
+        width: 540px;
+    }
+    .team_list{
+        width: 100%;
+        margin: auto;
+        display: block;
+    }
+    .first_member{
+        margin-bottom: 50px;
+    }
+    .second_member{
+        margin-bottom: 50px;
+    }
+    .message_box{
+        width: auto;
+        padding: 35px 35px 14px 35px;
+    }
+    input{
+        width: auto;
+    }
+}
+@media (max-width: 560px){
+    nav, .container, .team_list, .hero_section{
+        width: 80%;
+        margin:auto;
+    }
+    .brand{
+        width: 80%;
+        margin:auto;    }
+    #paragraph{
+        width: 80%;
+        margin:auto;    
+    }
+    .message_box{
+        display:none;
+    }
+}
