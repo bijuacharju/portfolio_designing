@@ -1,0 +1,161 @@
+header{
+    background: url(../images/background-portfolio.png);
+    background-size: cover;
+    background-repeat: no-repeat;
+    height: 100vh;
+}
+.hero_section{
+    text-align: left;
+}
+#path, #path a{
+    font-family: 'Orbitron', sans-serif;
+    font-size: 14px;
+    color: #ffffff;
+    margin: 20px 0 0 0;
+}
+#path a:hover{
+    color: #e36700;
+}
+#greeting{
+    margin-top: 35vh;
+    font-size: 65px;
+    color: #e36700;
+    line-height: 100px;
+}
+#intro{
+    font-family: 'Russo One', sans-serif;
+    font-size: 30px;
+    font-weight: 500;
+    line-height: 43px;
+}
+.complete_intro{
+    display: flex;
+    justify-content: space-between;
+    text-align: justify;
+    font-family: 'Poppins', sans-serif;
+    font-size: 17px;
+    color: #333333;
+    align-items: center;
+}
+.details{
+    width: 600px;
+    line-height: 36px;
+    letter-spacing: 1px;
+}
+.details p{
+    margin: 0;
+}
+#nested_title{
+    margin-bottom: 35px;
+}
+#college_name{
+    font-family: 'Russo One', sans-serif;
+    font-size: 20px;
+    color: #333333;
+    margin-top: 35px;
+}
+#time_period{
+    font-family: 'Russo One', sans-serif;
+    font-size: 18px;
+    color: #333333;
+    margin-bottom: 30px;
+}
+#description{
+    font-family: 'Poppins', sans-serif;
+    font-size: 17px;
+    text-align: justify;
+    color: #333333;
+    line-height: 36px;
+    letter-spacing: 1px;
+    margin-bottom: 0;
+}
+.skills_details{
+    display: flex;
+    justify-content: space-between;
+}
+.col{
+    width: 450px;
+}
+.col p{
+    font-family: 'Poppins', sans-serif;
+    font-size: 17px;
+    font-weight: 500;
+    color: #333333;
+    text-align: left;
+    margin: 30px 0 10px 0;
+}
+#percentage_value{
+    color: #e36700;
+    float: right;
+}
+.full_length{
+    width: 100%;
+    height: 10px;
+    background: #bbbbbb;
+    border-radius: 3px;
+}
+.skill_value{
+    height: 10px;
+    background: #e36700;
+    border-radius: 3px;
+}
+@media (max-width:1000px) {
+    .details{
+        width: 400px;
+    }
+    .skills_details{
+        display: block;
+    }
+    .col{
+        width: 640px;
+        margin:auto;
+    }
+}
+@media(max-width:800px){
+    nav, .container, .team_list, .hero_section{
+        width: 640px;
+    }
+
+    #active a:hover{
+        color: rgba(227, 103, 0, 08);
+        background-color: rgba(red, green, blue, alpha);
+    }
+    .toggle-button{
+        display:flex;
+    }
+    .menu{
+        display:none;
+        width: 100%;
+        background:  rgba(42, 22, 2, 0.7);
+        text-align: center;
+        z-index: 1;
+    }
+    nav{
+        flex-direction: column;
+        align-items: flex-start;
+    }
+    .brand{
+        display: flex;
+        height: 60px;
+        width: 640px;
+        align-items: center;
+        justify-content: space-between;
+    }
+    .brand ul li{
+        padding-left: 21px;
+        height: 60px;
+        display: flex;
+        align-items: center;
+    }
+    .menu ul li{
+        display: block;
+    }
+    #active, #active a{
+        color: #ffffff;
+        background-color:transparent;
+    }
+    #paragraph{
+        width: 640px;
+    }
+    
+}

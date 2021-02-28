@@ -1,0 +1,167 @@
+header{
+    background: url(../images/background-blogs.png);
+    background-size: cover;
+    background-repeat: no-repeat;
+    height: 80vh;
+}
+.hero_section{
+    text-align: left;
+}
+#path, #path a{
+    font-family: 'Orbitron', sans-serif;
+    font-size: 14px;
+    color: #ffffff;
+    margin: 20px 0 0 0;
+}
+#path a:hover{
+    color: #e36700;
+}
+#greeting{
+    font-size: 65px;
+    color: #e36700;
+    line-height: 100px;
+}
+#intro{
+    margin-top: 25vh;
+    font-family: 'Russo One', sans-serif;
+    font-size: 65px;
+    font-weight: 500;
+    letter-spacing: 5px;
+}
+.content{
+    margin: 0;
+}
+.brief{
+    height: 20vh;
+    display: flex;
+    align-items: center;
+    margin-bottom: 25px;
+}
+.row{
+    display:flex;
+    justify-content: space-between;
+}
+.row a{
+    text-decoration: none;
+}
+.col{
+    width: 300px;
+    height: 404px;
+    background: #eeeeee;
+    border-radius: 5px;
+}
+.col img{
+    margin: 15px 0;
+    border-radius: 3px;
+}
+
+.col:hover{
+    cursor: pointer;
+    box-shadow: 0 2px 5px #aaa;
+}
+.col:hover img{
+    filter: opacity(0.6);
+}
+.text{
+    width: 270px;
+    margin:auto;
+    text-align: justify;
+}
+#blog_title{
+    font-family: 'Poppins', sans-serif;
+    font-size: 14px;
+    font-weight: 600;
+    color: #111111;
+    margin: 0 0 7px 0;
+}
+.col:hover #blog_title{
+    text-decoration: underline;
+}
+#blog_date{
+    font-family: 'Poppins', sans-serif;
+    font-size: 12px;
+    font-weight: 400;
+    color: #333333;
+    margin: 0 0 7px 0;
+}
+#blog_description{
+    font-family: 'Poppins', sans-serif;
+    font-size: 12px;
+    line-height: 20px;
+    font-weight: 400;
+    color: #333333;
+    margin: 0 0 7px 0;
+}
+#blog_hashtag{
+    font-family: 'Poppins', sans-serif;
+    font-size: 10px;
+    font-weight: 400;
+    color: #333333;
+    letter-spacing: 1px;
+    margin: 0;
+}
+@media (max-width:1000px) {
+    .row{
+        display: block;
+    }
+    .col{
+        display: flex;
+        width: 760px;
+        height: 340px;
+        margin:auto;
+        margin-bottom: 25px;
+    }
+    .col img{
+        width: 380px;
+        height: auto;
+        margin:auto;
+    }
+}
+@media(max-width:800px){
+    nav, .container, .team_list, .hero_section{
+        width: 640px;
+    }
+
+    #active a:hover{
+        color: rgba(227, 103, 0, 08);
+        background-color: rgba(red, green, blue, alpha);
+    }
+    .toggle-button{
+        display:flex;
+    }
+    .menu{
+        display:none;
+        width: 100%;
+        background:  rgba(73, 34, 3, 0.5);
+        text-align: center;
+        z-index: 1;
+    }
+    nav{
+        flex-direction: column;
+        align-items: flex-start;
+    }
+    .brand{
+        display: flex;
+        height: 60px;
+        width: 640px;
+        align-items: center;
+        justify-content: space-between;
+    }
+    .brand ul li{
+        padding-left: 21px;
+        height: 60px;
+        display: flex;
+        align-items: center;
+    }
+    .menu ul li{
+        display: block;
+    }
+    #active, #active a{
+        color: #ffffff;
+        background-color:transparent;
+    }
+    #paragraph{
+        width: 640px;
+    }
+    
+}
